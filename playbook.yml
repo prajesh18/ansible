@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  gather_facts: no
+    # vars_files:
+    # - amazon_credentials.yml
+  tasks:
+    - name: Pinging all the servers
+      ping:

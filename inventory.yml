@@ -1,0 +1,14 @@
+plugin: aws_ec2
+  #credentials:
+  #aws_access_key: "{{ aws_access_key }}"
+  #aws_secret_key: "{{ aws_secret_key }}"
+aws_access_key: AKIAZI2LESRI5YK7KNCI
+aws_secret_key: 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
+regions:
+  - ap-south-1
+filters:
+  instance-state-name: running
+hostnames:
+  - 172.31.14.134
+compose:
+  ansible_host: 172.31.9.212

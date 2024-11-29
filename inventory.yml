@@ -5,7 +5,7 @@ keyed_groups:
  key: ansible_group
 filters:
  instance-state-name: running
- "tags:name: web*"
+ "tags:name": web*
 hostnames:
  - private-ip-address
 compose:
